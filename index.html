@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons8-question-mark-100.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/b77f5bf5ce.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Rubik+Marker+Hatch&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Guess my number</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="widget">
+        <div class="result">
+          <div id="glow" class="result-box glow">
+            <h1 class="result__number">?</h1>
+          </div>
+          <h2 class="result__title">Guess My Number</h2>
+          <p class="result__conditions">(between 1 and 100)</p>
+        </div>
+        <div class="operations">
+          <div class="check">
+            <input
+              class="check__number"
+              type="text"
+              placeholder="Your number"
+              pattern="\d*"
+              maxlength="3"
+            />
+            <button class="check__button">
+              <span class="shadow"></span>
+              <span class="edge"></span>
+              <span class="front"><i class="fa-solid fa-check"></i> Check</span>
+            </button>
+          </div>
+          <p class="text">\Your Result/</p>
+          <div class="bottom">
+            <div class="points">
+              <p class="points__score">
+                <i class="fa-solid fa-person-rays"></i> Score:
+                <span class="points__score-num">20</span>
+              </p>
+              <p class="points__highscore">
+                <i class="fa-solid fa-ranking-star"></i> Highscore:
+                <span class="points__highscore-num">&nbsp;</span>
+              </p>
+            </div>
+
+            <button class="refresh">
+              <span class="shadow"></span><span class="edge"></span
+              ><span class="front"
+                ><i class="fa-sharp fa-solid fa-rotate-right"></i> Refresh</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
